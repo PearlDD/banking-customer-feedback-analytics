@@ -1,0 +1,10 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const elements={};for(const id of ['month','product','issue','scope','metrics','trend','ranking','responses','table','quality','insights','reset','export'])elements[id]={value:'',innerHTML:'',textContent:'',addEventListener(){}};
+const context={window:{},document:{getElementById:id=>elements[id],createElement:()=>({click(){}})},Blob,URL,setTimeout,console};
+vm.createContext(context);vm.runInContext(fs.readFileSync('dist/data.js','utf8'),context);vm.runInContext(fs.readFileSync('dist/app.js','utf8'),context);
+assert.match(elements.scope.textContent,/84,195 complaints selected/);
+elements.month.value='2025-12';vm.runInContext('render()',context);assert.match(elements.scope.textContent,/7,692 complaints selected/);assert.match(elements.table.innerHTML,/4,434/);
+elements.product.value='CD (Certificate of Deposit)';elements.issue.value='Unable to get your credit report or credit score';vm.runInContext('render()',context);assert.match(elements.scope.textContent,/0 complaints selected/);assert.match(elements.metrics.innerHTML,/N\/A/);
+elements.reset.onclick();assert.match(elements.scope.textContent,/84,195 complaints selected/);
+let exported;context.Blob=class{constructor(parts){exported=parts.join('')}};context.URL={createObjectURL:()=> 'blob:test',revokeObjectURL(){}};elements.export.onclick();assert.match(exported,/Managing an account",44959/);assert.equal(exported.split('\r\n').length,12);
+console.log('Passed: full cohort, December filtering, combined empty state, reset, exported CSV counts.');

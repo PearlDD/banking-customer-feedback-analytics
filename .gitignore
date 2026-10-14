@@ -1,0 +1,4 @@
+data/complaints.csv
+data/analytics.sqlite
+__pycache__/
+.DS_Store

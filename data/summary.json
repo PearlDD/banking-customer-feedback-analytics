@@ -1,0 +1,110 @@
+{
+  "n": 84195,
+  "raw": 84348,
+  "duplicates": 0,
+  "rejected": 153,
+  "knownTimely": 84195,
+  "timelyYes": 83586,
+  "narrativeCount": 0,
+  "sha256": "4d45e5e73b4be8ef5b79a0b5e6304ae254a3591e7a24591dc87534128f599fb2",
+  "retrieved": "2026-10-14",
+  "period": "2025-01-01 to 2025-12-31",
+  "source": "https://www.consumerfinance.gov/data-research/consumer-complaints/",
+  "cube": null,
+  "issues": [
+    [
+      "Managing an account",
+      44959
+    ],
+    [
+      "Problem caused by your funds being low",
+      11939
+    ],
+    [
+      "Closing an account",
+      10178
+    ],
+    [
+      "Problem with a lender or other company charging your account",
+      9609
+    ],
+    [
+      "Opening an account",
+      6957
+    ],
+    [
+      "Incorrect information on your report",
+      224
+    ],
+    [
+      "Problem with a company's investigation into an existing problem",
+      169
+    ],
+    [
+      "Improper use of your report",
+      64
+    ],
+    [
+      "Problem with fraud alerts or security freezes",
+      51
+    ],
+    [
+      "Credit monitoring or identity theft protection services",
+      35
+    ],
+    [
+      "Unable to get your credit report or credit score",
+      10
+    ]
+  ],
+  "months": [
+    [
+      "2025-01",
+      18367
+    ],
+    [
+      "2025-02",
+      5452
+    ],
+    [
+      "2025-03",
+      5070
+    ],
+    [
+      "2025-04",
+      5229
+    ],
+    [
+      "2025-05",
+      5394
+    ],
+    [
+      "2025-06",
+      5557
+    ],
+    [
+      "2025-07",
+      6403
+    ],
+    [
+      "2025-08",
+      6505
+    ],
+    [
+      "2025-09",
+      6141
+    ],
+    [
+      "2025-10",
+      6308
+    ],
+    [
+      "2025-11",
+      6077
+    ],
+    [
+      "2025-12",
+      7692
+    ]
+  ]
+}
