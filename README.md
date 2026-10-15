@@ -1,6 +1,6 @@
 # Banking Customer Feedback Analytics
 
-Independent portfolio case study by Wenyu (Pearl) Dai. Python + SQL (SQLite) + JavaScript/HTML/CSS. No frameworks or external chart services required.
+Independent portfolio case study by Pearl. Python + SQL + JavaScript/HTML/CSS. No frameworks or external chart services required.
 
 ## Business question
 Which checking/savings account complaint categories should a customer-experience team investigate first?
